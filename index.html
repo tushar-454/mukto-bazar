@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./Assets/images/MuktoBazarfavicon.png" type="image/x-icon" />
+  <title>হোম || মুক্ত বাজার</title>
+  <!-- add bootstrap - Include via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- add fontawesome icon  -->
+  <link rel="stylesheet" href="./Assets/fontawesome-free-6.3.0-web/css/all.min.css">
+  <script src="./Assets/fontawesome-free-6.3.0-web/js/all.min.js"></script>
+  
+  <!-- swiperjs css  -->
+  <link rel="stylesheet" href="./Assets/package/swiper-bundle.min.css">
+  <!-- style sheet add  -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- newsbar html code start  -->
+  <section id="newsbar">
+    <div class="container-fluid bg-success">
+      <div class="container d-flex justify-content-between align-items-center pt-2">
+        <h6 class="text-white">
+          বিনামূল্যে বিতরণ: ইভেন্ট সংরক্ষণ করতে আমাদের সময় সদ্ব্যবহার করুন
+        </h6>
+        <h6 class="text-white">USD</h6>
+      </div>
+    </div>
+  </section>
+  <!-- newsbar html code end  -->
+
+  <!-- logo navbar use icon html code start  -->
+  <header class="mb-3 sticky-top" style="background: transparent;
+  backdrop-filter: blur(10px) !important;">
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <a title="মুক্তবাজার কৃষি নির্ভর ই-কমার্স প্রতিষ্ঠান,আমাদের অঙ্গিকার কৃষকের নেয্যতা এবং ভুক্তার নিরাপদ খাদ্য।" class="navbar-brand" href="#" data-bs-toggle="tooltip"><img src="./Assets/images/MuktoBazarfavicon.png" width="70px"
+            alt="ব্রান্ড লোগো !" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" style="font-size: 3rem;box-shadow: none;border: none;outline: none;">
+          <span id="barIcon"><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div id="mynavbar" class="collapse navbar-collapse">
+          <ul id="navmenu" class="navbar-nav me-auto fs-3">
+            <li class="nav-item me-2">
+              <a href="#" class="nav-link active">হোম</a>
+            </li>
+            <li class="nav-item me-2">
+              <a href="#" class="nav-link">পণ্যশালা</a>
+            </li>
+            <li class="nav-item me-2">
+              <a href="#" class="nav-link">ব্লগ</a>
+            </li>
+            <li class="nav-item me-2">
+              <a href="#" class="nav-link">আমাদের পরিচয়</a>
+            </li>
+            <li class="nav-item me-2">
+              <a href="#" class="nav-link">আমাদের পন্য</a>
+            </li>
+            <li class="nav-item me-2">
+              <a href="#" class="nav-link">যোগাযোগ</a>
+            </li>
+          </ul>
+          <div id="useIcon" class="d-flex text-muted fs-3">
+            <div class="dropdown">
+              <span class="ms-3 ms-md-0" style="cursor: pointer;" data-bs-toggle="dropdown"><i
+                  class="fa-solid fa-users"></i></span>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">আমার অ্যাকাউন্ট</a></li>
+                <li><a class="dropdown-item" href="#">আমার কার্ট</a></li>
+                <li><a class="dropdown-item" href="#">লগইন</a></li>
+                <li><a class="dropdown-item" href="#">চাহিদা তালিকা</a></li>
+                <li><a class="dropdown-item" href="#">চেকআউট</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <span class="ms-3" style="cursor: pointer;" data-bs-toggle="dropdown"><i
+                  class="fa-regular fa-heart"></i></span>
+              <ul class="dropdown-menu">
+                <li>
+                  <p class="dropdown-item">আপনার পছন্দের কোনো পন্য তালিকাভুক্ত করা নেই</p>
+                </li>
+                </ulc>
+            </div>
+            <div class="dropdown">
+              <span class="ms-3" style="cursor: pointer;" data-bs-toggle="dropdown"><i
+                  class="fa-solid fa-cart-flatbed-suitcase"></i></span>
+              <ul class="dropdown-menu" style="left: -110px">
+                <li>
+                  <p class="dropdown-item">আপনার কার্ট বর্তমানে খালি।</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- logo navbar use icon html code end  -->
+  <!-- catagory, scarch, call html code start  -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-3 col-sm-4">
+          <div class="bg-success text-white p-2 px-3 dropdown" style="cursor: pointer;">
+            <div data-bs-toggle="dropdown" class="d-flex justify-content-between fs-5">
+              <div><i class="fa-solid fa-list-check"></i>
+                <span class="ms-1">ক্যাটাগরি</span>
+              </div>
+              <div><i class="fa-solid fa-angle-down"></i></div>
+            </div>
+            <ul class="dropdown-menu fs-5" id="catagoryDropdown">
+              <li><span class="dropdown-item">ফল ফলাদি</span></li>
+              <li><a class="dropdown-item" href="#">তরল পানীয়</a></li>
+              <li><a class="dropdown-item" href="#">খাটি মধু</a></li>
+              <li><a class="dropdown-item" href="#">রুপালী ইলিশ</a></li>
+              <li><a class="dropdown-item" href="#">খেজুরের গুড়</a></li>
+              <li><a class="dropdown-item" href="#">মুদিখানা বাজার</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="scarch" class="col-0 col-md-7 col-sm-5">
+          <div class="input-group">
+            <input type="scarch" class="form-control shadow-none" placeholder="Search">
+            <button class="btn btn-success fs-5" type="submit">খুঁজুন</button>
+          </div>
+        </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <!-- <div style="width: 100%;"> -->
+              <a href="tel:+8801791988679" class="btn btn-danger rounded-0 fs-5" style="display: block;">কল করুন</a>
+            <!-- </div> -->
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- catagory, scarch, call html code end -->
+
+  <!-- carousel html start  -->
+  <section>
+    <div class="container-fluid mt-4 mb-4">
+      <!-- Slider main container -->
+      <div class="swiper mySwiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img class="main-img img-thumbnail" src="./Assets/images/banner-1.jpg" alt="banner-1"></div>
+          <div class="swiper-slide"><img class="main-img img-thumbnail" src="./Assets/images/banner-2.jpg" alt="banner-2"></div>
+          <div class="swiper-slide"><img class="main-img img-thumbnail" src="./Assets/images/banner-3.jpg" alt="banner-3"></div>
+          <div class="swiper-slide"><img class="main-img img-thumbnail" src="./Assets/images/banner-4.jpg" alt="banner-4"></div>
+          <div class="swiper-slide"><img class="main-img img-thumbnail" src="./Assets/images/banner-5.jpg" alt="banner-5"></div>
+          <div class="swiper-slide"><img class="main-img img-thumbnail" src="./Assets/images/banner-6.jpg" alt="banner-6"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+    </div>
+  </section>
+  <!-- carousel html end  -->
+
+  <!-- jumbotron html code start  -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="bgImage1 d-flex justify-content-end align-items-end mb-3">
+            <div class="bgImgContentWrap1">
+              <div class="bgImageText text-white">
+                <h4 class="text-danger">অরজিনাল মধু</h4>
+                <h2 class="h2 text-info">১০০% খাটি</h2>
+                <h4 class="text-warning">স্বাস্থ্যকর পুষ্টি</h4>
+              </div>
+              <div class="bgImageBtn">
+                <a href="#" class="btn btn-success rounded-pills shadow-none fs-5">এখনই কিনুন</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="bgImage2 d-flex justify-content-end align-items-end me-1">
+            <div class="bgImgContentWrap2">
+              <div class="bgImageText text-white">
+                <h4 class="text-danger">ফসলি তরমুজ</h4>
+                <h2 class="h2 text-info">১০০% মিষ্টি</h2>
+                <h4 class="text-warning">মজা নাকি এমনেই খাই 😆</h4>
+              </div>
+              <div class="bgImageBtn">
+                <a href="#" class="btn btn-success rounded-pills shadow-none fs-5">এখনই কিনুন</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- jumbotron html code end -->
+
+  <!-- tranding product html start  -->
+  <section>
+    <div class="container">
+        <div class="sectionTop mt-5 mb-3 d-flex justify-content-between align-items-center">
+          <h1 class="text-decoration-underline font-weight-bold mb-0">টপ ক্যাটাগরি</h1>
+          <a href="#" class="btn btn-outline-success rounded-pill fs-5">সব দেখুন</a>
+        </div>
+      <div class="row g-3">
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="card" style="width:100%">
+            <img class="card-img-top" src="./Assets/images/top_product_1.jpg" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <div class="card-title text-center d-flex justify-content-center text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h4 class="card-text">গাছের আম</h4>
+              <h5 class="text-success">মূল্য ৩০০<small><sup><i class="fa-solid fa-bangladeshi-taka-sign"></i></sup></small> <small> <sub>(<del>৩৫০</del>)</sub></small></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="card" style="width:100%">
+            <img class="card-img-top" src="./Assets/images/top_product_2.jpg" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <div class="card-title text-center d-flex justify-content-center text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h4 class="card-text">রূপালী ইলিশ</h4>
+              <h5 class="text-success">মূল্য ৮০০ <small> <sub>(<del>৮৫০</del>)</sub></small></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="card" style="width:100%">
+            <img class="card-img-top" src="./Assets/images/top_product_3.jpg" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <div class="card-title text-center d-flex justify-content-center text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+
+              </div>
+              <h4 class="card-text">প্রাকৃতিক মধু</h4>
+              <h5 class="text-success">মূল্য ৭০০<small><sup><i class="fa-solid fa-bangladeshi-taka-sign"></i></sup></small> <small> <sub>(<del>৮৫০</del>)</sub></small></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="card" style="width:100%">
+            <img class="card-img-top" src="./Assets/images/top_product_4.jpg" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <div class="card-title text-center d-flex justify-content-center text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h4 class="card-text">রাজশাহী লিচি</h4>
+              <h5 class="text-success">মূল্য ৩০০ <small> <sub>(<del>৩৫০</del>)</sub></small></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- tranding product html end -->
+
+  <!-- ads html code start  -->
+  <!-- ads html code end  -->
+
+  <!-- new product html code start  -->
+
+  <section>
+    <div class="container">
+        <div class="sectionTop mt-5 mb-3 d-flex justify-content-between align-items-center">
+          <h1 class="text-decoration-underline font-weight-bold mb-0">নতুন প্রোডাক্ট</h1>
+          <a href="#" class="btn btn-outline-success rounded-pill fs-5">সব দেখুন</a>
+        </div>
+      <div class="row g-3">
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="card" style="width:100%">
+            <img class="card-img-top" src="./Assets/images/new_product_1.jpg" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <h4 class="card-text">ফসলি তরমুজ</h4>
+              <h5 class="text-success">মূল্য ৪৫০ <small> <sub>(<del>৫০০</del>)</sub></small></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="card" style="width:100%">
+            <img class="card-img-top" src="./Assets/images/new_product_2.jpg" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <h4 class="card-text">কুমিল্লার রসমালাই</h4>
+              <h5 class="text-success">মূল্য ৪০০ <small> <sub>(<del>৪৫০</del>)</sub></small></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="card" style="width:100%">
+            <img class="card-img-top" src="./Assets/images/new_product_3.jpg" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <h4 class="card-text">হানি নাটস্‌</h4>
+              <h5 class="text-success">মূল্য ১০০০ <small> <sub>(<del>১০৫০</del>)</sub></small></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="card" style="width:100%">
+            <img class="card-img-top" src="./Assets/images/new_product_4.jpg" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <h4 class="card-text">কাচা তরকারি</h4>
+              <h5 class="text-success">মূল্য ২০০ <small> <sub>(<del>২৭০</del>)</sub></small></h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+   <!-- new product html code end -->
+
+   <!-- client say html code start  -->
+   <section>
+    <div class="container-fluid mt-5">
+      <div class="clientBg mb-3">
+        <div class="clientSaytitle pt-5 pb-3 d-flex justify-content-center align-items-center border-bottom-3 border-success">
+          <h1 class="text-center">আমাদের গ্রাহকের মন্তব্য</h1>
+        </div>
+        <div class="container">
+          <div class="clientsaybody">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <div class="clientCommentWrap">
+                    <div class="clientCommentBody">
+                      <p class="text-center fs-2 text-muted">ইলিশ মাছ গুলো খুবই ভালো ছিলো নদীর টাটকা মাছ। খেতে খুবই সুস্বাদু। ধন্যবাদ মুক্ত বাজারকে। </p>
+                    </div>
+                    <div class="clientCommentImg mt-5 d-flex flex-column justify-content-center align-items-center">
+                      <img src="./Assets/images/comment_3.jpg" class="rounded-circle" style="width: 150px;">
+                      <h5 class="mt-3 text-center fs-3">ইঞ্জিনিয়ার আলমগির আদুল্লাহ্‌</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="clientCommentWrap">
+                    <div class="clientCommentBody">
+                      <p class="text-center fs-2 text-info">রসমালাই খেতে বরাবর এ ভালো লাগে কিন্ত কুমিল্লা গিয়ে নিয়ে আসা খুবই সময় সাপেক্ষ। মুক্ত বাজার মাধ্যমে অর্ডার করলাম এখনই খেয়ে দেখলাম খুবই ভালো ছিলো। কুমিল্লার মনোহরপুর অর্জিনাল রসমালাই। আমি খুবই খুশি মুক্ত বাজার থেকে কিনে।</p>
+                    </div>
+                    <div class="clientCommentImg mt-5 d-flex flex-column justify-content-center align-items-center">
+                      <img src="./Assets/images/comment_2.jpg" class="rounded-circle" style="width: 150px;">
+                      <h5 class="mt-3 text-center fs-3">রেশমির স্বামী</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item active">
+                  <div class="clientCommentWrap">
+                    <div class="clientCommentBody">
+                      <p class="text-center fs-2 text-warning">অরজিনাল মধু পাওয়া খুবই দুস্কর সেইসাথে কঠিন ও। মুক্ত বাজার মধু কাজ শুরু করার সাথে চিন্তা করলাম এইখান থেকে মধু নিবো আশা রাখি ভালো হবে। আজকে হাতে পেলাম ভালোই লাগলো। এখন দেখি কতদিন পর্যন্ত বাহিরে ভালো থাকে।</p>
+                    </div>
+                    <div class="clientCommentImg mt-5 d-flex flex-column justify-content-center align-items-center">
+                      <img src="./Assets/images/comment_1.jpg" class="rounded-circle" style="width: 150px;">
+                      <h5 class="mt-3 text-center fs-3">তাহছিনের আব্বু</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <i class="fa-solid fa-angle-left fs-3 text-dark"></i>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <i class="fa-solid fa-angle-right fs-3 text-dark"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+   <!-- client say html code end -->
+
+   <!-- subscribe section html code start  -->
+
+   <!-- subscribe section html code end -->
+
+   <!-- footer section html code start  -->
+   <footer>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 col-lg-3 col-md-6 text-secondary">
+          <p title="আপনার বাজার" data-bs-toggle="tooltip"><img src="./Assets/images/mukto_bazar_flat.png" style="width: 250px;"></p>
+          <p><span class="me-3"><i class="fa-solid fa-house-chimney"></i></span> রাজশাহী বাংলাদেশ, রাজশাহী ৬২০৫</p>
+          <p><a href="tel:01731698472" class="text-decoration-none text-secondary"><span class="me-3"><i class="fa-solid fa-phone"></i></span>০১৭৩১৬৯৮৪৭২</a></p>
+          <p><span class="me-3"><i class="fa-solid fa-envelope"></i></span> muktobazar24bd@gamil.com</p>
+          <ul class="list-unstyled d-flex justify-content-evenly align-items-center">
+            <li><a href="https://www.facebook.com/www.muktobazar.shop"><i class="fa-brands fa-square-facebook text-secondary p-3 bg-light rounded-circle"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-square-twitter text-secondary p-3 bg-light rounded-circle"></i></a></li>
+            <li><a href="mailto:muktobazar24bd@gamil.com"><i class="fa-brands fa-google-plus-g text-secondary p-3 bg-light rounded-circle"></i></a></li>
+            <li><a href="https://www.youtube.com/@muktobazar-shop"><i class="fa-brands fa-youtube text-secondary p-3 bg-light rounded-circle"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <h3 class="text-decoration-underline">তথ্য</h3>
+          <a href="#" class="fs-5 text-decoration-none text-secondary">যোগাযোগ করুন</a><br>
+          <a href="#" class="fs-5 text-decoration-none text-secondary">ডেলিভারি তথ্য</a><br>
+          <a href="#" class="fs-5 text-decoration-none text-secondary">গোপনীয়তা নীতি</a><br>
+          <a href="#" class="fs-5 text-decoration-none text-secondary">বিধি - নিষেধ এবং শর্তাবলী</a><br>
+          <a href="#" class="fs-5 text-decoration-none text-secondary">প্রস্তুতকারক</a>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <h3 class="text-decoration-underline">আমাদের প্রতিষ্ঠান</h3>
+          <a href="#" class="fs-5 text-decoration-none text-secondary">আমার অ্যাকাউন্ট</a> <br>
+          <a href="#" class="fs-5 text-decoration-none text-secondary">আমার কার্ট</a> <br>
+          <a href="#" class="fs-5 text-decoration-none text-secondary">লগইন</a> <br>
+          <a href="#" class="fs-5 text-decoration-none text-secondary">ইচ্ছেতালিকা</a> <br>
+          <a href="#" class="fs-5 text-decoration-none text-secondary">চেকআউট</a>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <h3 class="text-decoration-underline">খোলার সময়</h3>
+          <h5 class="text-secondary">খোলার সময়</h5>
+          <h5 class="text-secondary">সোম-শুক্র: সকাল ৮টা থেকে রাত ১০টা</h5>
+          <h5 class="text-secondary">শনি: সকাল ৯টা থেকে ৮টা</h5>
+          <h5 class="text-secondary">আমরা সব ছুটির দিন কাজ</h5>
+          <h5 class="text-secondary">আমাদের অ্যাপ ডাউনলোড করুন</h5>
+        </div>
+      </div>
+    </div>
+   </footer>
+   <!-- footer section html code end -->
+    <div>
+      <hr>
+    </div>
+   <!-- copyright html code start  -->
+   <footer>
+    <div class="container">
+      <div class="copyrightWrap row d-flex justify-content-center align-items-center">
+          <div class="col-12 col-md-6">
+            <p class="text-secondary text-center">Copyright © <span class="text-success">MuktoBazar</span> All Right Reserved.</p>
+          </div>
+          <div class="col-12 col-md-6 d-flex justify-content-center">
+            <img src="./Assets/images/ssleommerz.webp" style="width: 300px; margin-bottom: 1rem;">
+          </div>
+      </div>
+    </div>
+   </footer>
+   <!-- copyright html code end -->
+
+
+  <!-- swiper js script  -->
+    <script src="./Assets/package/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+
+      let swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop:true,
+          grabCursor: true,
+          pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+          }
+      })
+    </script>
+
+    <!-- initial bootstrap tooltrip js  -->
+    <script>
+      let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+      </script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
