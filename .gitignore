@@ -1,9 +1,9 @@
-echo "# mukto-bazar" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/tushar-454/mukto-bazar.git
-git push -u origin main
+# echo "# mukto-bazar" >> README.md
+# git init
+# git add README.md
+# git commit -m "first commit"
+# git branch -M main
+# git remote add origin https://github.com/tushar-454/mukto-bazar.git
+# git push -u origin main
 
-git ignore uncomment
+# I think I can understant github contribuition
